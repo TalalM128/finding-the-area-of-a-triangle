@@ -1,0 +1,23 @@
+#By Talal Malhi
+#Method one in finding the area of a triangle through python
+option = input("Hello user, are you finding the area of a triangle?")
+if option == "yes":
+    print("Okay! Lets get started!")
+else:
+    print("Sure, no worries! We recommend you come again after a pratice")
+Base = int(input("Please enter the base of the triangle:"))  
+Height = int(input("Please enter the height of the triangle:"))  
+area = Base * Height / 2
+print("The area of the triangle would be: {}" .format (area))
+#Method two in finding the area of a triangle through python
+option = input("Hello user, are you finding the area of a triangle?")
+if option == "yes":
+    print("Okay! Lets get started!")
+else:
+    print("Sure, no worries! We recommend you come again after a pratice")
+side_1 = int(input("The first side of the triangle:"))  
+side_2 = int(input("The second side of the triangle:"))  
+side_3 = int(input("The thrid side of the triangle:"))  
+semi_perimeter = (side_1 + side_2 + side_3) / 2 
+area = (semi_perimeter*(semi_perimeter-side_1)*(semi_perimeter-side_2)*(semi_perimeter-side_3)) ** 0.5
+print('The area of the triangle would be: %0.2f' %area)
